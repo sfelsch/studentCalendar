@@ -1,0 +1,68 @@
+.materias{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.contenedorMaterias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+.contenedorImagenMateria{
+    width: 100%;
+    color: white;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    width: 100%;
+    height: 10rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    text-align: center;
+    padding-left: 2rem;
+    opacity: 0;
+    transition: opacity 0.2s; /* Agrega una transición para suavizar la aparición */
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Muestra el div con el título al pasar el mouse por encima */
+}
+.botonArchivosAdd{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.btn{
+    width: 30% !important;
+}

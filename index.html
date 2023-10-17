@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Personal</title>
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Logo Campus</h1>
+            </div>
+            <div class="links">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+                <a href="#">Inicio</a>
+            </div>
+            <div class="links">
+                <span class="material-symbols-outlined">
+                    calendar_month
+                </span>
+                <a href="calendarPage.html">Calendario</a>
+            </div>
+            <div class="links">
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+                <a href="#">Ajustes</a>
+            </div>
+
+        </nav>
+
+        <div class="contenedor">
+            <header>
+                <h1>¡Hola, Sebastian!</h1>
+            </header>
+
+            <button class="btn primary btn-block hero__cta">Agregar materia</button>
+
+            <div id="dinamic" class="contenedorDinamico"></div>
+        </div>
+    </div>
+
+<section class="modal">
+    <div class="modal__container">
+        <h2 class="modal__title">Agregar materia</h2>
+        <div class="contenedorPimagen">
+            <p class="pDeImagen">Seleccione una imagen</p>
+        </div>
+        <div class="image-options">
+            <img src="./img/fondoCeleste.jpg" alt="Opción 1" class="image-option" data-src="./img/fondoCeleste.jpg">
+            <img src="./img/naranja.png" alt="Opción 2" class="image-option" data-src="./img/naranja.png">
+            <img src="./img/verde.jpg" alt="Opción 3" class="image-option" data-src="./img/verde.jpg">
+        </div>
+        <input type="text" id="nombreMateria" placeholder="Nombre de la materia">
+        <input type="text" id="nombreProfesor" placeholder="Nombre del profesor">
+        <div class="modal__radios">
+            <input class="radio" type="radio" id="primerAnio" name="anio" value="1">
+            <label class="lblRadio" for="primerAnio">1° año</label>
+            <input class="radio" type="radio" id="segundoAnio" name="anio" value="2">
+            <label class="lblRadio" for="segundoAnio">2° año</label>
+            <input class="radio" type="radio" id="tercerAnio" name="anio" value="3">
+            <label class="lblRadio" for="tercerAnio">3° año</label>
+            <input class="radio" type="radio" id="cuartoAnio" name="anio" value="4">
+            <label class="lblRadio" for="cuartoAnio">4° año</label>
+        </div>
+        <div class="botones">
+            <a href="#" class="modal__close">Cerrar</a>
+            <a href="#" id="agregar"  class="modal__close">Agregar</a>
+        </div>
+       
+    </div>
+</section>
+
+    <script src="./javascript/index.js"></script>
+
+</body>
+
+</html>

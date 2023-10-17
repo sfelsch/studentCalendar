@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Personal</title>
+    <link rel="stylesheet" href="./estilos/calendarPage.css">
+    <link rel="stylesheet" href="./estilos/estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Logo Campus</h1>
+            </div>
+            <div class="links">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+                <a href="index.html">Inicio</a>
+            </div>
+            <div class="links">
+                <span class="material-symbols-outlined">
+                    calendar_month
+                </span>
+                <a href="#">Calendario</a>
+            </div>
+            <div class="links">
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+                <a href="#">Ajustes</a>
+            </div>
+
+        </nav>
+        <div class="contenedorCalendario">
+            <div id="calendar">
+                <h2></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Domingo</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sábado</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="contenedorBotones">
+                    <button id="prev" class="btn primary">Anterior</button>
+                    <button id="next" class="btn primary">Siguiente</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="modal">
+        <div class="modal__container">
+            <h2 class="modal__title">Nota para el día <span id="selectedDate"></span></h2>
+            <textarea id="noteInput" placeholder="Escribe tu nota aquí"></textarea>
+            <div class="botones">
+                <a href="#" class="modal__close">Cerrar</a>
+                <a href="#" id="saveNote" class="modal__close">Guardar</a>
+            </div>
+            
+        </div>
+    </section>
+    <script src="./javascript/calendarPage.js"></script>
+</body>
+
+</html>
