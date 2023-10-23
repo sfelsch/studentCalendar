@@ -81,6 +81,19 @@ contenedorTarjetas.addEventListener('click', function (event) {
 });
 
 
+var menuToggle = document.querySelector(".menu-toggle");
+var links = document.querySelectorAll(".menu-links");
+
+menuToggle.addEventListener("click", function () {
+    links.forEach(function (link) {
+        if (link.style.display === "block") {
+            link.style.display = "none";
+        } else {
+            link.style.display = "block";
+        }
+    });
+});
+
 
 
 

@@ -5,13 +5,15 @@
     justify-content: center;
 }
 #calendar {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     color: #10bc8d;
 }
 
 #calendar h2 {
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #calendar table {

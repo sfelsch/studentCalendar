@@ -69,3 +69,16 @@ botonAgregar.addEventListener('click', () => {
     // Cierra el modal o realiza cualquier otra acción que desees
     modal.classList.remove('modal--show');
 });
+
+var menuToggle = document.querySelector(".menu-toggle");
+var links = document.querySelectorAll(".menu-links");
+
+menuToggle.addEventListener("click", function () {
+    links.forEach(function (link) {
+        if (link.style.display === "block") {
+            link.style.display = "none";
+        } else {
+            link.style.display = "block";
+        }
+    });
+});

@@ -66,3 +66,77 @@
 .btn{
     width: 30% !important;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-color: black;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        width: 25%;
+
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 50% !important;
+        height: 1.5rem;
+    }
+
+    .links {
+        display: none;
+        display: block;
+        width: 30% !important;
+    }
+
+    .image-options {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .modal__radios {
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem;
+        flex: none;
+    }
+
+    .contenedorDinamico {
+        justify-content: center;
+    }
+    .btn{
+        width: 100% !important;
+    }
+}
